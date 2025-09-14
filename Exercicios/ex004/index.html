@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações em HTML</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, tenho <strong>termo em destaque</strong> usando a tag <strong>strong</strong> (semântica)</p>
+    <h2>Italíco / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo ítalico </i>usando a tag <strong> i</strong> (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag <strong>em</strong>
+    (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado </mark> usando a tag <strong>mark</strong></p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Usavamos a tag <strong>big</strong> para <big>Texto grande</big> que agora foi movida para o CSS que agora usa-se a propriedade <strong>font-size</strong></p>
+    <p>Para <small>texto pequeno</small> usamos a tag <strong>small</strong></p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto excluido </del> para indicar que ele deve ser lido, mas não considerado, para isso usamos a tag <strong>del</strong></p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicinado depois, usamos a tag <strong>ins</strong></p>
+    <p>Existe também o <u>sublinhado</u> com a tag <strong>u</strong> (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir algo como x <sup>20</sup>+3 usamos tag <strong>sup</strong></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir algo como H <sub>2</sub>O usamos a tag <strong>sub</strong></p>
+    <h2>Outras formatações</h2>
+    <h3>Código-fonte</h3>
+    <p>Para deixar a frase ou escrita em fonte de <code>código</code> como por exemplo <code>window.document.getElementById('exemplo')</code> usa-se a tag <strong>code</strong></p>
+    <h2>Pré-formatação</h2>
+    <p>Usamos a tag <strong>pré</strong> para fazer as quebras de linha de um código seguindo o exemplo abaixo</p>
+    <P><strong>Sem tag <mark>pre</mark></strong></P>
+
+     <code> function negrito() {
+      let texto = document.getElementById("texto");
+      texto.style.fontWeight = (texto.style.fontWeight === "bold") ? "normal" : "bold";
+    }
+
+    function italico() {
+      let texto = document.getElementById("texto");
+      texto.style.fontStyle = (texto.style.fontStyle === "italic") ? "normal" : "italic";
+    }
+
+    function sublinhado() {
+      let texto = document.getElementById("texto");
+      texto.style.textDecoration = (texto.style.textDecoration === "underline") ? "none" : "underline";
+    }</code>
+    <p><strong>Com a tag <mark>pre</mark></strong></p>
+
+     <pre><code>function negrito() {
+      let texto = document.getElementById("texto");
+      texto.style.fontWeight = (texto.style.fontWeight === "bold") ? "normal" : "bold";
+    }
+
+    function italico() {
+      let texto = document.getElementById("texto");
+      texto.style.fontStyle = (texto.style.fontStyle === "italic") ? "normal" : "italic";
+    }
+
+    function sublinhado() {
+      let texto = document.getElementById("texto");
+      texto.style.textDecoration = (texto.style.textDecoration === "underline") ? "none" : "underline";}</code></pre>
+
+      <h2>Citações simples </h2>
+      <p>Como diria seu Madruga:<q>Não à trabalho difícil, o difícil é ter que trabalhar</q></p>
+      <p>Nesta frase usamos a tag <strong>q</strong> para adicionar aspas, é algo com sentido, sentido de uma citação</p>
+      <h2>Citações completas </h2>
+      <p>Como diria seu Madruga: <blockquote>Não a trabalho difícil, o difícil é ter que trabalhar</blockquote></p>
+      <p>Usando a tag <strong>blockquote</strong> faz a quebra de linha e o deslocamento lateral</p>
+      <h2>Abreviações</h2>
+      <p>Estou estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascanding Style Sheets"> CSS</abbr></p>
+
+     Jaqueline lauto Rodrigues<mark style="background-color: blue;"> Siona</mark>
+
+    
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+</head>
+<style>
+    body{
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        color:goldenrod;
+        text-align: center;
+     }
+     a{
+        text-decoration: none;
+     }
+     a:visited{
+        color: red;
+     }
+
+     a:active{
+        color: orange;
+     }
+    a:hover{
+        color: green;
+        text-decoration: underline red;
+     }
+     a::after{
+        content: '[link]';
+        color:black
+     }
+     a::before{
+        content: '→';
+
+     }
+    </style>
+<body>
+    <h1>Acesse nossos links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank"classe="especial">Repositório</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal no youtube</a></li>
+        <li><a href="https://cursoemvideo.com"target="_blank">Curso em video</a></li>
+    </ul>
+    
+</body>
+</html>

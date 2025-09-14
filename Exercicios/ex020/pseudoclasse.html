@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+</head>
+<style>
+    div{
+        display: inline-block;
+        background-color: silver;
+        border-color: silver;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+}
+div#a{
+    background-color: brown;
+}
+div#b{
+    background-color: yellow;
+}
+div#c{
+    background-color: green;
+}
+div:hover#a{
+    background-color:green;
+}
+div:hover#b{
+    background-color: blue;
+}
+div:hover#c{
+    background-color: brown;
+}
+</style>
+<body>
+    <div id="a">A</div>
+    <div id="b">B</div>
+    <div id="c">C</div>
+    
+</body>
+</html>
